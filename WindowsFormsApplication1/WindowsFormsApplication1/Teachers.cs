@@ -32,6 +32,12 @@ namespace WindowsFormsApplication1
             tif.Show();
         }
 
+        private void 学生基本信息查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            teacherseestu ts = new teacherseestu();
+            ts.Show();
+        }
+
 
       
     }
