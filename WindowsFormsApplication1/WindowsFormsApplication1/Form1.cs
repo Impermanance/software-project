@@ -111,7 +111,7 @@ namespace WindowsFormsApplication1
                                
                                     id = (string)reader1.GetValue(0);
                                     password = (string)reader1.GetValue(11);
-                                    Teachers frmteacher = new Teachers();
+                                    Teachers frmteacher = new Teachers(id);
                                     frmteacher.Show();
                                     this.Hide();
                             }

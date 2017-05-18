@@ -137,6 +137,7 @@
             this.tuichu.TabIndex = 5;
             this.tuichu.Text = "退出";
             this.tuichu.UseVisualStyleBackColor = true;
+            this.tuichu.Click += new System.EventHandler(this.tuichu_Click_1);
             // 
             // showcourse
             // 

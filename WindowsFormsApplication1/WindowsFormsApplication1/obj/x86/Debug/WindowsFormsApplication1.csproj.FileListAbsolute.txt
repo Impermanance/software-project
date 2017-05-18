@@ -32,3 +32,4 @@ C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApp
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Teachers.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.teacherzhuce.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Teachersinformation.resources
