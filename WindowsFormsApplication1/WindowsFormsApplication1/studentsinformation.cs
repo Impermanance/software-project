@@ -86,7 +86,7 @@ namespace WindowsFormsApplication1
             tb_address.ReadOnly = false;
             tb_bir.ReadOnly = false;
             tb_class.ReadOnly = false; ;
-            tb_id.ReadOnly = false;
+           // tb_id.ReadOnly = false;
             tb_name.ReadOnly = false;
             tb_room.ReadOnly = false;
             pwdd.ReadOnly = false;

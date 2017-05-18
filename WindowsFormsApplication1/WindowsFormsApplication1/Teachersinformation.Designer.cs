@@ -117,6 +117,7 @@
             this.button1.TabIndex = 90;
             this.button1.Text = "...";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tb_sex
             // 
@@ -218,6 +219,7 @@
             this.bt_queren.TabIndex = 79;
             this.bt_queren.Text = "确认";
             this.bt_queren.UseVisualStyleBackColor = true;
+            this.bt_queren.Click += new System.EventHandler(this.bt_queren_Click);
             // 
             // lb_face
             // 
@@ -343,6 +345,7 @@
             this.Controls.Add(this.lb_id);
             this.Name = "Teachersinformation";
             this.Text = "Teachersinformation";
+            this.Load += new System.EventHandler(this.Teachersinformation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
