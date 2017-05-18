@@ -16,6 +16,7 @@ namespace WindowsFormsApplication1
         private string sql = null;
         private SqlConnection conn = null;
         public string sqls;
+        public int iso=0;
         public string id;
         public courses(string ID)
         {
@@ -109,6 +110,17 @@ namespace WindowsFormsApplication1
 
         private void button5_Click(object sender, EventArgs e)
         {
+            
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                if ((bool)dataGridView1.Rows[i].Cells[0].EditedFormattedValue == false)
+                    iso = 1;
+                else
+                    iso = 0;
+            }
+            if (iso == 1)
+                MessageBox.Show("未选择任何课程，请重试");
+
             sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
             conn = new SqlConnection(sql);
             conn.Open();

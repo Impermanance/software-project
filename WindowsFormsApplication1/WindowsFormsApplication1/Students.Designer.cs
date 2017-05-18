@@ -34,7 +34,6 @@
             this.课程管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查看课程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.已选课程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.退课ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.成绩管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.个人成绩ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,8 +73,7 @@
             // 
             this.课程管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.查看课程ToolStripMenuItem,
-            this.已选课程ToolStripMenuItem,
-            this.退课ToolStripMenuItem});
+            this.已选课程ToolStripMenuItem});
             this.课程管理ToolStripMenuItem.Name = "课程管理ToolStripMenuItem";
             this.课程管理ToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.课程管理ToolStripMenuItem.Text = "课程管理";
@@ -95,13 +93,6 @@
             this.已选课程ToolStripMenuItem.Size = new System.Drawing.Size(195, 24);
             this.已选课程ToolStripMenuItem.Text = "已选课程";
             this.已选课程ToolStripMenuItem.Click += new System.EventHandler(this.已选课程ToolStripMenuItem_Click);
-            // 
-            // 退课ToolStripMenuItem
-            // 
-            this.退课ToolStripMenuItem.Name = "退课ToolStripMenuItem";
-            this.退课ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.退课ToolStripMenuItem.Size = new System.Drawing.Size(195, 24);
-            this.退课ToolStripMenuItem.Text = "退课";
             // 
             // 成绩管理ToolStripMenuItem
             // 
@@ -150,7 +141,6 @@
         private System.Windows.Forms.ToolStripMenuItem 个人信息查询ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 课程管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 查看课程ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 退课ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 成绩管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 个人成绩ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
