@@ -24,7 +24,8 @@ namespace WindowsFormsApplication1
 
         private void 录入学生信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            LuruStu ls = new LuruStu();
+            ls.Show();
         }
     }
 }

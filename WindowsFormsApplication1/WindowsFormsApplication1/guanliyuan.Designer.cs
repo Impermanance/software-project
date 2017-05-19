@@ -30,15 +30,15 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.学生信息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.教师信息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.课程管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改学生信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.录入学生信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.教师信息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查看教师信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.录入教师信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.课程管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查看课程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新增课程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +64,22 @@
             this.学生信息管理ToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.学生信息管理ToolStripMenuItem.Text = "学生信息管理";
             // 
+            // 修改学生信息ToolStripMenuItem
+            // 
+            this.修改学生信息ToolStripMenuItem.Name = "修改学生信息ToolStripMenuItem";
+            this.修改学生信息ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.修改学生信息ToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
+            this.修改学生信息ToolStripMenuItem.Text = "查看学生信息";
+            this.修改学生信息ToolStripMenuItem.Click += new System.EventHandler(this.修改学生信息ToolStripMenuItem_Click);
+            // 
+            // 录入学生信息ToolStripMenuItem
+            // 
+            this.录入学生信息ToolStripMenuItem.Name = "录入学生信息ToolStripMenuItem";
+            this.录入学生信息ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
+            this.录入学生信息ToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
+            this.录入学生信息ToolStripMenuItem.Text = "录入学生信息";
+            this.录入学生信息ToolStripMenuItem.Click += new System.EventHandler(this.录入学生信息ToolStripMenuItem_Click);
+            // 
             // 教师信息管理ToolStripMenuItem
             // 
             this.教师信息管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -73,58 +89,50 @@
             this.教师信息管理ToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.教师信息管理ToolStripMenuItem.Text = "教师信息管理";
             // 
+            // 查看教师信息ToolStripMenuItem
+            // 
+            this.查看教师信息ToolStripMenuItem.Name = "查看教师信息ToolStripMenuItem";
+            this.查看教师信息ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.查看教师信息ToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
+            this.查看教师信息ToolStripMenuItem.Text = "查看教师信息";
+            // 
+            // 录入教师信息ToolStripMenuItem
+            // 
+            this.录入教师信息ToolStripMenuItem.Name = "录入教师信息ToolStripMenuItem";
+            this.录入教师信息ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.录入教师信息ToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
+            this.录入教师信息ToolStripMenuItem.Text = "录入教师信息";
+            // 
             // 课程管理ToolStripMenuItem
             // 
             this.课程管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.查看课程ToolStripMenuItem,
             this.新增课程ToolStripMenuItem});
             this.课程管理ToolStripMenuItem.Name = "课程管理ToolStripMenuItem";
+            this.课程管理ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.课程管理ToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.课程管理ToolStripMenuItem.Text = "课程管理";
-            // 
-            // 退出ToolStripMenuItem
-            // 
-            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
-            this.退出ToolStripMenuItem.Text = "退出";
-            // 
-            // 修改学生信息ToolStripMenuItem
-            // 
-            this.修改学生信息ToolStripMenuItem.Name = "修改学生信息ToolStripMenuItem";
-            this.修改学生信息ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
-            this.修改学生信息ToolStripMenuItem.Text = "查看学生信息";
-            this.修改学生信息ToolStripMenuItem.Click += new System.EventHandler(this.修改学生信息ToolStripMenuItem_Click);
-            // 
-            // 录入学生信息ToolStripMenuItem
-            // 
-            this.录入学生信息ToolStripMenuItem.Name = "录入学生信息ToolStripMenuItem";
-            this.录入学生信息ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
-            this.录入学生信息ToolStripMenuItem.Text = "录入学生信息";
-            this.录入学生信息ToolStripMenuItem.Click += new System.EventHandler(this.录入学生信息ToolStripMenuItem_Click);
-            // 
-            // 查看教师信息ToolStripMenuItem
-            // 
-            this.查看教师信息ToolStripMenuItem.Name = "查看教师信息ToolStripMenuItem";
-            this.查看教师信息ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
-            this.查看教师信息ToolStripMenuItem.Text = "查看教师信息";
-            // 
-            // 录入教师信息ToolStripMenuItem
-            // 
-            this.录入教师信息ToolStripMenuItem.Name = "录入教师信息ToolStripMenuItem";
-            this.录入教师信息ToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
-            this.录入教师信息ToolStripMenuItem.Text = "录入教师信息";
             // 
             // 查看课程ToolStripMenuItem
             // 
             this.查看课程ToolStripMenuItem.Name = "查看课程ToolStripMenuItem";
-            this.查看课程ToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.查看课程ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.查看课程ToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
             this.查看课程ToolStripMenuItem.Text = "查看课程";
             // 
             // 新增课程ToolStripMenuItem
             // 
             this.新增课程ToolStripMenuItem.Name = "新增课程ToolStripMenuItem";
-            this.新增课程ToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.新增课程ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
+            this.新增课程ToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
             this.新增课程ToolStripMenuItem.Text = "新增课程";
+            // 
+            // 退出ToolStripMenuItem
+            // 
+            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
+            this.退出ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.退出ToolStripMenuItem.Text = "退出";
             // 
             // guanliyuan
             // 
