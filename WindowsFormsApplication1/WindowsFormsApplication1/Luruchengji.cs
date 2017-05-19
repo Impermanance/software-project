@@ -29,12 +29,14 @@ namespace WindowsFormsApplication1
             conn = new SqlConnection(sql);
             conn.Open();
 
-            string sqls = string.Format("select Students.ID,Students.Name,Scores.CID,Scores.CName,Scores.Grades  from Scores,Students"
-            +"  where Scores.ID=Students.ID and Scores.TeacherName =(select Teacher.Name from Teacher where ID='{0}')", id);
-            SqlDataAdapter da = new SqlDataAdapter(sqls, conn);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-            dataGridView1.DataSource = ds.Tables[0];
+            //string sqls = string.Format("select DISTINCT   from zhijiao,Course,Teacher"
+            //+" where  TID='{0}' "
+            //+" and zhijiao.CID=Course.CID "
+            //+" and zhijiao.TID=Teacher.ID ", id);
+            //SqlDataAdapter da = new SqlDataAdapter(sqls, conn);
+            //DataSet ds = new DataSet();
+            //da.Fill(ds);
+            //dataGridView1.DataSource = ds.Tables[0];
 
             //sqls = string.Format("select CName from Scores where TeacherName =(select Name from Teacher where ID='{0}')", id);
             //SqlDataAdapter daa = new SqlDataAdapter(sqls, conn);
@@ -42,14 +44,14 @@ namespace WindowsFormsApplication1
             //daa.Fill(dss);
             //DataTable dt = ds.Tables[0];
             //textBox1.Text = dt.Rows[0].ToString();
-             string sqlss = string.Format("select * from Scores where TeacherName =(select Name from Teacher where ID='{0}')",id);
+             string sqlss = string.Format("select * from Course where Teacher =(select Name from Teacher where ID='{0}')",id);
              cmd = new SqlCommand(sqlss, conn);
              SqlDataReader reader = cmd.ExecuteReader();
              if (reader.HasRows)
              {
                  while (reader.Read())
                  {
-                     textBox1.Text = reader.GetValue(4).ToString();
+                     textBox1.Text = reader.GetValue(1).ToString();
                  }
              }
              reader.Close();

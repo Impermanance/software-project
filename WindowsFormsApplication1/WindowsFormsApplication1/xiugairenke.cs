@@ -56,9 +56,10 @@ namespace WindowsFormsApplication1
                         {
                             if ((bool)dataGridView2.Rows[j].Cells[0].EditedFormattedValue == true)
                             {
-                                string sqls = string.Format("insert into zhijiao values((select CID from Course where Cname='{0}'),(select ID from Teacher where Name='{1}'))"
+                                string sqls = string.Format("insert into zhijiao values((select ID from Teacher where Name='{0}'),(select CID from Course where Cname='{1}'))"
+                                    ,dataGridView2.Rows[j].Cells[1].Value.ToString()
                                     ,dataGridView1.Rows[i].Cells[1].Value.ToString()
-                                    ,dataGridView2.Rows[j].Cells[1].Value.ToString());
+                                    );
                                 SqlCommand cmdl = new SqlCommand(sqls, conn);
                                 cmdl.ExecuteNonQuery();
                             }

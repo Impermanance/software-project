@@ -87,6 +87,8 @@ namespace WindowsFormsApplication1
             {
                 MessageBox.Show(err.ToString());
             }
+            conn.Close();
+            textBox1.Text = textBox2.Text = textBox3.Text = textBox4.Text = textBox5.Text = null;
 
         }
 

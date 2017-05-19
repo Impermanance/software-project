@@ -183,12 +183,14 @@ namespace WindowsFormsApplication1
                         sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
                         conn = new SqlConnection(sql);
                         conn.Open();
-                        string sqls = "update Teacher set Name='" + tb_name.Text.ToString() + "',Sex='" + tb_sex.Text.ToString()
-                            + "',Birthday='" + tb_bir.Text.ToString() + "',Grade='" + tb_xueli.Text.ToString()
-                            + "',Zhicheng='" + tb_zhicheng.Text.ToString() + "',Xueyuan='" + depart.Text.ToString()
-                            + "',Face='" + cb_face.Text.ToString() + "',Tel='" + telp.Text.ToString()
-                            + "',Address='" + tb_address.Text.ToString() + "',Pic='" + path.ToString()
-                            + "',pwd='" + pwdd.Text.ToString() + "' where ID='" + id.ToString() + "';";
+                        string sqls = "insert into Teacher values ('" + tb_id.Text.ToString() + "','"
+                            + tb_name.Text.ToString() + "','" + tb_sex.Text.ToString() + "','"
+                            + tb_bir.Text.ToString() + "','" + tb_xueli.Text.ToString() + "','"
+                            + tb_zhicheng.Text.ToString() + "','" + depart.Text.ToString() + "','"
+                            + cb_face.Text.ToString() + "','" + telp.Text.ToString() + "','"
+                            + tb_address.Text.ToString() + "','" + path.ToString() + "','"
+                            + pwdd.Text.ToString() +
+                             "')";
                         SqlCommand cmdl = new SqlCommand(sqls, conn);
                         cmdl.ExecuteNonQuery();
                         MessageBox.Show("教师信息录入成功");

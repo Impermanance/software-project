@@ -36,6 +36,7 @@ namespace WindowsFormsApplication1
             DataSet ds = new DataSet();
             da.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
+            conn.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
