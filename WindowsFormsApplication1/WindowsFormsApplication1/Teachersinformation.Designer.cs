@@ -344,7 +344,7 @@
             this.Controls.Add(this.lb_name);
             this.Controls.Add(this.lb_id);
             this.Name = "Teachersinformation";
-            this.Text = "Teachersinformation";
+            this.Text = "教师信息";
             this.Load += new System.EventHandler(this.Teachersinformation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

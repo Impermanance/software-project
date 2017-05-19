@@ -27,5 +27,31 @@ namespace WindowsFormsApplication1
             LuruStu ls = new LuruStu();
             ls.Show();
         }
+
+        private void 查看教师信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            managerseeTeac mt = new managerseeTeac();
+            mt.Show();
+        }
+
+        private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            shouye s = new shouye();
+            s.Show();
+
+        }
+
+        private void 录入教师信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Luruteac lt = new Luruteac();
+            lt.Show();
+        }
+
+        private void 查看课程ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            managerseecourse ms = new managerseecourse();
+            ms.Show();
+        }
     }
 }

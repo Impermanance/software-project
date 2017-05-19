@@ -58,11 +58,29 @@
     <Compile Include="LuruStu.Designer.cs">
       <DependentUpon>LuruStu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Luruteac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Luruteac.Designer.cs">
+      <DependentUpon>Luruteac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerseecourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managerseecourse.Designer.cs">
+      <DependentUpon>managerseecourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="managerseestu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="managerseestu.Designer.cs">
       <DependentUpon>managerseestu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerseeTeac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managerseeTeac.Designer.cs">
+      <DependentUpon>managerseeTeac.cs</DependentUpon>
     </Compile>
     <Compile Include="shouye.cs">
       <SubType>Form</SubType>
@@ -162,8 +180,17 @@
     <EmbeddedResource Include="LuruStu.resx">
       <DependentUpon>LuruStu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Luruteac.resx">
+      <DependentUpon>Luruteac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerseecourse.resx">
+      <DependentUpon>managerseecourse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="managerseestu.resx">
       <DependentUpon>managerseestu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerseeTeac.resx">
+      <DependentUpon>managerseeTeac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="shouye.resx">
       <DependentUpon>shouye.cs</DependentUpon>

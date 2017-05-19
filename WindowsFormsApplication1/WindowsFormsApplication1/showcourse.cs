@@ -75,6 +75,9 @@ namespace WindowsFormsApplication1
                             string sqls = string.Format("delete from selectcourses where SID= '{0}' and ID='{1}'", id.ToString(), CID.ToString());
                             SqlCommand cmdl = new SqlCommand(sqls, conn);
                             cmdl.ExecuteNonQuery();
+                            sqls = string.Format("delete from Scores where ID= '{0}' and CID='{1}'", id.ToString(), CID.ToString());
+                            SqlCommand cmdll = new SqlCommand(sqls, conn);
+                            cmdll.ExecuteNonQuery();
                             isok = 1;
                         }
                         else

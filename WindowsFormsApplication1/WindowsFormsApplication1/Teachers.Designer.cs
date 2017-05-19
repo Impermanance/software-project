@@ -72,6 +72,7 @@
             // 任课信息查询ToolStripMenuItem
             // 
             this.任课信息查询ToolStripMenuItem.Name = "任课信息查询ToolStripMenuItem";
+            this.任课信息查询ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
             this.任课信息查询ToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
             this.任课信息查询ToolStripMenuItem.Text = "任课信息查询";
             this.任课信息查询ToolStripMenuItem.Click += new System.EventHandler(this.任课信息查询ToolStripMenuItem_Click);
