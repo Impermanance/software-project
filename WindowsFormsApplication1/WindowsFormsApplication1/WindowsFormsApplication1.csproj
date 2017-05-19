@@ -70,6 +70,12 @@
     <Compile Include="guanliyuan.Designer.cs">
       <DependentUpon>guanliyuan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Luruchengji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Luruchengji.Designer.cs">
+      <DependentUpon>Luruchengji.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="showcourse.cs">
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="guanliyuan.resx">
       <DependentUpon>guanliyuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Luruchengji.resx">
+      <DependentUpon>Luruchengji.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

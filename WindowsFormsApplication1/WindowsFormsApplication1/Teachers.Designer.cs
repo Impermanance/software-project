@@ -31,14 +31,13 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.基本信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.个人信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.任课信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.执教班级查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.录入学生成绩ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.学生基本信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.学生成绩查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.录入成绩ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.成绩修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.任课信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.执教班级查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,13 +71,26 @@
             this.个人信息查询ToolStripMenuItem.Text = "个人信息查询";
             this.个人信息查询ToolStripMenuItem.Click += new System.EventHandler(this.个人信息查询ToolStripMenuItem_Click);
             // 
+            // 任课信息查询ToolStripMenuItem
+            // 
+            this.任课信息查询ToolStripMenuItem.Name = "任课信息查询ToolStripMenuItem";
+            this.任课信息查询ToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
+            this.任课信息查询ToolStripMenuItem.Text = "任课信息查询";
+            this.任课信息查询ToolStripMenuItem.Click += new System.EventHandler(this.任课信息查询ToolStripMenuItem_Click);
+            // 
+            // 执教班级查询ToolStripMenuItem
+            // 
+            this.执教班级查询ToolStripMenuItem.Name = "执教班级查询ToolStripMenuItem";
+            this.执教班级查询ToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
+            this.执教班级查询ToolStripMenuItem.Text = "执教班级查询";
+            this.执教班级查询ToolStripMenuItem.Click += new System.EventHandler(this.执教班级查询ToolStripMenuItem_Click);
+            // 
             // 录入学生成绩ToolStripMenuItem
             // 
             this.录入学生成绩ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.学生基本信息查询ToolStripMenuItem,
             this.学生成绩查询ToolStripMenuItem,
-            this.录入成绩ToolStripMenuItem,
-            this.成绩修改ToolStripMenuItem});
+            this.录入成绩ToolStripMenuItem});
             this.录入学生成绩ToolStripMenuItem.Name = "录入学生成绩ToolStripMenuItem";
             this.录入学生成绩ToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.录入学生成绩ToolStripMenuItem.Text = "学生成绩管理";
@@ -105,13 +117,7 @@
             this.录入成绩ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
             this.录入成绩ToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
             this.录入成绩ToolStripMenuItem.Text = "录入成绩";
-            // 
-            // 成绩修改ToolStripMenuItem
-            // 
-            this.成绩修改ToolStripMenuItem.Name = "成绩修改ToolStripMenuItem";
-            this.成绩修改ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.成绩修改ToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
-            this.成绩修改ToolStripMenuItem.Text = "成绩修改";
+            this.录入成绩ToolStripMenuItem.Click += new System.EventHandler(this.录入成绩ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
@@ -120,18 +126,6 @@
             this.退出ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
-            // 
-            // 任课信息查询ToolStripMenuItem
-            // 
-            this.任课信息查询ToolStripMenuItem.Name = "任课信息查询ToolStripMenuItem";
-            this.任课信息查询ToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
-            this.任课信息查询ToolStripMenuItem.Text = "任课信息查询";
-            // 
-            // 执教班级查询ToolStripMenuItem
-            // 
-            this.执教班级查询ToolStripMenuItem.Name = "执教班级查询ToolStripMenuItem";
-            this.执教班级查询ToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
-            this.执教班级查询ToolStripMenuItem.Text = "执教班级查询";
             // 
             // Teachers
             // 
@@ -158,7 +152,6 @@
         private System.Windows.Forms.ToolStripMenuItem 学生基本信息查询ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 学生成绩查询ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 录入成绩ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 成绩修改ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 任课信息查询ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 执教班级查询ToolStripMenuItem;

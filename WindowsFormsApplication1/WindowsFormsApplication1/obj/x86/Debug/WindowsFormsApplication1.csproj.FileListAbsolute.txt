@@ -35,3 +35,4 @@ C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApp
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Teachersinformation.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.teacherseestu.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.stuscore.resources
+C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Luruchengji.resources

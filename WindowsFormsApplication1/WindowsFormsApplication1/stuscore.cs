@@ -33,6 +33,7 @@ namespace WindowsFormsApplication1
 
         private void search_Click(object sender, EventArgs e)
         {
+            flag = 0;
             sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
             conn = new SqlConnection(sql);
             conn.Open();
@@ -57,7 +58,15 @@ namespace WindowsFormsApplication1
                     dataGridView1.DataSource = ds.Tables[0];
                 }
                 else
+                {
+                    reader.Close();
+                    string sqls = string.Format("select CID,CName,Grades,TeacherName from Scores where ID ='{0}'", 0);
+                    SqlDataAdapter da = new SqlDataAdapter(sqls, conn);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds);
+                    dataGridView1.DataSource = ds.Tables[0];
                     MessageBox.Show("不存在该学生信息，或者该学生成绩未录入");
+                }
                 reader.Close();
                 conn.Close();
             
@@ -81,12 +90,19 @@ namespace WindowsFormsApplication1
                 }
                 else
                 {
+                    reader1.Close();
+                    string sqls = string.Format("select CID,CName,Grades,TeacherName from Scores where ID =(select ID from Students where Name='{0}')", 0);
+                    SqlDataAdapter da = new SqlDataAdapter(sqls, conn);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds);
+                    dataGridView1.DataSource = ds.Tables[0];
                     MessageBox.Show("不存在该学生信息，或者该学生成绩未录入");
                 }
                 reader1.Close();
                 conn.Close();
             }
             conn.Close();
+           
         }
 
         private void queren_Click(object sender, EventArgs e)

@@ -44,7 +44,11 @@ namespace WindowsFormsApplication1
             sc.Show();
         }
 
-
+        private void 录入成绩ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Luruchengji lj = new Luruchengji(id);
+            lj.Show();
+        }
       
     }
 }
