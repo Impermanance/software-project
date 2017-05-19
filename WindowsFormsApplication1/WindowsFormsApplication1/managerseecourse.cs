@@ -36,7 +36,7 @@ namespace WindowsFormsApplication1
                     if ((bool)dataGridView1.Rows[i].Cells[0].EditedFormattedValue == true)
                     {
                         CID = dataGridView1.Rows[i].Cells[1].Value.ToString();
-                        string sqls = string.Format("delete from Scores where Cname=(select Cname from CName where ID='{0}')", CID);
+                        string sqls = string.Format("delete from Scores where CName=(select Cname from CName where ID='{0}')", CID);
                         SqlCommand cmdllll = new SqlCommand(sqls, conn);
                         cmdllll.ExecuteNonQuery();
                         sqls = string.Format("delete from Course where CID='{0}'", CID);
@@ -67,17 +67,14 @@ namespace WindowsFormsApplication1
             try
             {
                 for (int i = 0; i < dataGridView1.Rows.Count; i++)
-                {
-                    if ((bool)dataGridView1.Rows[i].Cells[0].EditedFormattedValue == true)
-                    {
+                {            
                         CID = dataGridView1.Rows[i].Cells[1].Value.ToString();
-                        string sqls = string.Format("update Course set CID=" + dataGridView1.Rows[i].Cells[1].Value.ToString() + ",Cname=" + dataGridView1.Rows[i].Cells[2].Value.ToString()
-                            + ",Time=" + dataGridView1.Rows[i].Cells[3].Value.ToString() + ",Didian=" + dataGridView1.Rows[i].Cells[4].Value.ToString()
-                            + ",Teacher=" + dataGridView1.Rows[i].Cells[5].Value.ToString() + " where CID='{0}'", CID);
+                        string sqls = string.Format("update Course set CID= '" + dataGridView1.Rows[i].Cells[1].Value.ToString() + "',CName='" + dataGridView1.Rows[i].Cells[2].Value.ToString()
+                            + "',Time='" + dataGridView1.Rows[i].Cells[3].Value.ToString() + "',Didian='" + dataGridView1.Rows[i].Cells[4].Value.ToString()
+                            + "',Teacher='" + dataGridView1.Rows[i].Cells[5].Value.ToString() + "' where CID='{0}'", CID);
                         SqlCommand cmdl = new SqlCommand(sqls, conn);
                         cmdl.ExecuteNonQuery();
 
-                    }
                 }
                 MessageBox.Show("课程信息修改成功！");
             }

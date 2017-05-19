@@ -133,6 +133,7 @@
             this.新增课程ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
             this.新增课程ToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
             this.新增课程ToolStripMenuItem.Text = "新增课程";
+            this.新增课程ToolStripMenuItem.Click += new System.EventHandler(this.新增课程ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 

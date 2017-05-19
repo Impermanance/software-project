@@ -53,5 +53,11 @@ namespace WindowsFormsApplication1
             managerseecourse ms = new managerseecourse();
             ms.Show();
         }
+
+        private void 新增课程ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addcourse ac = new addcourse();
+            ac.Show();
+        }
     }
 }
