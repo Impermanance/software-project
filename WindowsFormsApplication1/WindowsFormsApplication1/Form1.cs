@@ -179,6 +179,33 @@ namespace WindowsFormsApplication1
             //this.Hide();
         }
 
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true)
+            {
+                radioButton2.Checked=false;
+                radioButton3.Checked = false;
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked == true)
+            {
+                radioButton1.Checked = false;
+                radioButton3.Checked = false;
+            }
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked == true)
+            {
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+            }
+        }
+
 
 
        

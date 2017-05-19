@@ -14,7 +14,8 @@ namespace WindowsFormsApplication1
     {
         public string path;
         private SqlCommand cmd = null;
-        private string sql = null;
+        //private string sql = null;
+        private static string sql = System.Configuration.ConfigurationSettings.AppSettings["connectionstring"];
         private SqlConnection conn = null;
 
         public teacherzhuce()
@@ -47,7 +48,7 @@ namespace WindowsFormsApplication1
             {
 
                 int t=0;
-                 sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+                 //sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
                 conn = new SqlConnection(sql);
                 conn.Open();
                 string sql_id = "select ID from Teacher ";

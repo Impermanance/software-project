@@ -13,7 +13,8 @@ namespace WindowsFormsApplication1
     public partial class showcourse : Form
     {
         // private SqlCommand cmd = null;
-        private string sql = null;
+        //private string sql = null;
+        private static string sql = System.Configuration.ConfigurationSettings.AppSettings["connectionstring"];
         private SqlConnection conn = null;
         public string sqls;
         public int iso = 0;
@@ -26,7 +27,7 @@ namespace WindowsFormsApplication1
 
         private void showcourse_Load(object sender, EventArgs e)
         {
-            sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+            //sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
             conn = new SqlConnection(sql);
             conn.Open();
 
@@ -59,7 +60,7 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("未选择任何课程，请重试");
  
             
-            sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+            //sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
             conn = new SqlConnection(sql);
             conn.Open();
             int isok = 0;

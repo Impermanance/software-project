@@ -18,7 +18,7 @@ namespace WindowsFormsApplication1
             InitializeComponent();
             id = ID;
             password = Password;
-
+            this.BackgroundImage=Image.FromFile(@"C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\Resources\background2.jpg");
         }
 
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)

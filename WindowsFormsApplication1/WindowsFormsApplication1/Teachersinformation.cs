@@ -13,7 +13,8 @@ namespace WindowsFormsApplication1
     public partial class Teachersinformation : Form
     {
         private SqlCommand cmd = null;
-        private string sql = null;
+        //private string sql = null;
+        private static string sql = System.Configuration.ConfigurationSettings.AppSettings["connectionstring"];
         private SqlConnection conn = null;
         public string path = @"Resources\dl.jpg";
         public int isok = 0;
@@ -71,7 +72,7 @@ namespace WindowsFormsApplication1
                 {
                     try
                     {
-                        sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+                        //sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
                         conn = new SqlConnection(sql);
                         conn.Open();
                         string sqls = "update Teacher set Name='" + tb_name.Text.ToString() + "',Sex='" + tb_sex.Text.ToString()
@@ -104,7 +105,7 @@ namespace WindowsFormsApplication1
 
         private void Teachersinformation_Load(object sender, EventArgs e)
         {
-            sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+            //sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
             conn = new SqlConnection(sql);
             conn.Open();
             sql = string.Format("select * from Teacher where ID = '{0}'", id.ToString());

@@ -13,7 +13,8 @@ namespace WindowsFormsApplication1
     public partial class studentsinformation : Form
     {
          private SqlCommand cmd = null;
-        private string sql = null;
+        //private string sql = null;
+         private static string sql = System.Configuration.ConfigurationSettings.AppSettings["connectionstring"];
         private SqlConnection conn = null;
         public string path=@"Resources\dl.jpg";
         public string id;
@@ -48,7 +49,7 @@ namespace WindowsFormsApplication1
                 {
                     try
                     {
-                        sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+                        //sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
                         conn = new SqlConnection(sql);
                         conn.Open();
                         string sqls = "update Students set Name='" + tb_name.Text.ToString() + "',Sex='" + tb_sex.Text.ToString()
@@ -106,7 +107,7 @@ namespace WindowsFormsApplication1
 
         private void studentsinformation_Load(object sender, EventArgs e)
         {
-            sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+            //sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
             conn = new SqlConnection(sql);
             conn.Open();
             sql = string.Format("select * from Students where ID = '{0}'", Convert.ToInt32(id));

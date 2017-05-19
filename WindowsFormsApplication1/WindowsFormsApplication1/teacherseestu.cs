@@ -13,7 +13,8 @@ namespace WindowsFormsApplication1
     public partial class teacherseestu : Form
     {
         private SqlCommand cmd = null;
-        private string sql = null;
+        //private string sql = null;
+        private static string sql = System.Configuration.ConfigurationSettings.AppSettings["connectionstring"];
         private SqlConnection conn = null;
         public string path = @"Resources\dl.jpg";
         public string id;
@@ -122,7 +123,7 @@ namespace WindowsFormsApplication1
                     {
                         if (flag == 1)
                         {
-                            sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+                            //sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
                             conn = new SqlConnection(sql);
                             conn.Open();
                             string sqls = "update Students set Name='" + tb_name.Text.ToString() + "',Sex='" + tb_sex.Text.ToString()
@@ -139,7 +140,7 @@ namespace WindowsFormsApplication1
                         }
                         else if (flag == 2)
                         {
-                            sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+                            //sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
                             conn = new SqlConnection(sql);
                             conn.Open();
                             string sqls = "update Students set Name='" + tb_name.Text.ToString() + "',Sex='" + tb_sex.Text.ToString()
@@ -183,7 +184,7 @@ namespace WindowsFormsApplication1
             {
                 id = textBox1.Text.ToString();
                 flag = 1;
-                sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+                //sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
                 conn = new SqlConnection(sql);
                 conn.Open();
                 sql = string.Format("select * from Students where ID = '{0}'", id);
@@ -220,7 +221,7 @@ namespace WindowsFormsApplication1
             {
                 sname = textBox1.Text.ToString().Trim();
                 flag = 2;
-                sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+                //sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
                 conn = new SqlConnection(sql);
                 conn.Open();
                 sql = string.Format("select * from Students where Name = '"+sname.ToString()+"'");

@@ -44,10 +44,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(189, 9);
+            this.label1.Font = new System.Drawing.Font("宋体", 22F);
+            this.label1.Location = new System.Drawing.Point(180, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 30);
+            this.label1.Size = new System.Drawing.Size(313, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "学生信息管理系统";
             // 
@@ -83,6 +83,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(258, 188);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(202, 25);
             this.textBox2.TabIndex = 4;
             // 
@@ -90,13 +91,15 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Location = new System.Drawing.Point(171, 347);
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(187, 347);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(58, 19);
             this.radioButton1.TabIndex = 5;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "学生";
             this.radioButton1.UseVisualStyleBackColor = false;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -106,26 +109,26 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(58, 19);
             this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "教师";
             this.radioButton2.UseVisualStyleBackColor = false;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton3.Location = new System.Drawing.Point(387, 347);
+            this.radioButton3.Location = new System.Drawing.Point(396, 347);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(73, 19);
             this.radioButton3.TabIndex = 7;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "管理员";
             this.radioButton3.UseVisualStyleBackColor = false;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.Location = new System.Drawing.Point(227, 267);
+            this.button1.Location = new System.Drawing.Point(231, 267);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
@@ -136,7 +139,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button2.Location = new System.Drawing.Point(356, 267);
+            this.button2.Location = new System.Drawing.Point(360, 267);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 9;

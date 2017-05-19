@@ -13,7 +13,8 @@ namespace WindowsFormsApplication1
     public partial class Grades : Form
     {
 
-        private string sql = null;
+        //private string sql = null;
+        private static string sql = System.Configuration.ConfigurationSettings.AppSettings["connectionstring"];
         private SqlConnection conn = null;
         public string id;
         public Grades(string ID)
@@ -24,7 +25,7 @@ namespace WindowsFormsApplication1
 
         private void Grades_Load(object sender, EventArgs e)
         {
-            sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+            //sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
             conn = new SqlConnection(sql);
             conn.Open();
 
