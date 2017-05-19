@@ -59,5 +59,11 @@ namespace WindowsFormsApplication1
             addcourse ac = new addcourse();
             ac.Show();
         }
+
+        private void 删除学生信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            deletestu ds = new deletestu();
+            ds.Show();
+        }
     }
 }
