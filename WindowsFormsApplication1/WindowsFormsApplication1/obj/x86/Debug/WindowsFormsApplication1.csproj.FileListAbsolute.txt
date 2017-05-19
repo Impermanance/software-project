@@ -19,7 +19,6 @@ C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApp
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
-C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.courses.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Grades.resources
@@ -31,6 +30,9 @@ C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApp
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.studentzhuce.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Teachers.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.teacherzhuce.resources
-C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Teachersinformation.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.teacherseestu.resources
+C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
