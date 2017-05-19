@@ -49,6 +49,18 @@ namespace WindowsFormsApplication1
             Luruchengji lj = new Luruchengji(id);
             lj.Show();
         }
+
+        private void 任课信息查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            renke r = new renke(id);
+            r.Show();
+        }
+
+        private void 执教班级查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            zhijiaobanji zb = new zhijiaobanji(id);
+            zb.Show();
+        }
       
     }
 }
