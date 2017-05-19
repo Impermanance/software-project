@@ -65,5 +65,17 @@ namespace WindowsFormsApplication1
             deletestu ds = new deletestu();
             ds.Show();
         }
+
+        private void 删除教师信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            deleteteac dt = new deleteteac();
+            dt.Show();
+        }
+
+        private void 修改任课信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            xiugairenke xr = new xiugairenke();
+            xr.Show();
+        }
     }
 }

@@ -41,6 +41,7 @@
             this.查看课程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新增课程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改任课信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,7 +97,8 @@
             this.教师信息管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.查看教师信息ToolStripMenuItem,
             this.录入教师信息ToolStripMenuItem,
-            this.删除教师信息ToolStripMenuItem});
+            this.删除教师信息ToolStripMenuItem,
+            this.修改任课信息ToolStripMenuItem});
             this.教师信息管理ToolStripMenuItem.Name = "教师信息管理ToolStripMenuItem";
             this.教师信息管理ToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.教师信息管理ToolStripMenuItem.Text = "教师信息管理";
@@ -121,8 +123,9 @@
             // 
             this.删除教师信息ToolStripMenuItem.Name = "删除教师信息ToolStripMenuItem";
             this.删除教师信息ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
-            this.删除教师信息ToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
+            this.删除教师信息ToolStripMenuItem.Size = new System.Drawing.Size(226, 24);
             this.删除教师信息ToolStripMenuItem.Text = "删除教师信息";
+            this.删除教师信息ToolStripMenuItem.Click += new System.EventHandler(this.删除教师信息ToolStripMenuItem_Click);
             // 
             // 课程管理ToolStripMenuItem
             // 
@@ -158,6 +161,14 @@
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
+            // 修改任课信息ToolStripMenuItem
+            // 
+            this.修改任课信息ToolStripMenuItem.Name = "修改任课信息ToolStripMenuItem";
+            this.修改任课信息ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
+            this.修改任课信息ToolStripMenuItem.Size = new System.Drawing.Size(226, 24);
+            this.修改任课信息ToolStripMenuItem.Text = "修改任课信息";
+            this.修改任课信息ToolStripMenuItem.Click += new System.EventHandler(this.修改任课信息ToolStripMenuItem_Click);
+            // 
             // guanliyuan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -189,5 +200,6 @@
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 删除学生信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 删除教师信息ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 修改任课信息ToolStripMenuItem;
     }
 }

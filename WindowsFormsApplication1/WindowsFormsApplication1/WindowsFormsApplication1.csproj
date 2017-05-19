@@ -64,6 +64,12 @@
     <Compile Include="deletestu.Designer.cs">
       <DependentUpon>deletestu.cs</DependentUpon>
     </Compile>
+    <Compile Include="deleteteac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteteac.Designer.cs">
+      <DependentUpon>deleteteac.cs</DependentUpon>
+    </Compile>
     <Compile Include="LuruStu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,12 @@
     <Compile Include="teacherzhuce.Designer.cs">
       <DependentUpon>teacherzhuce.cs</DependentUpon>
     </Compile>
+    <Compile Include="xiugairenke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiugairenke.Designer.cs">
+      <DependentUpon>xiugairenke.cs</DependentUpon>
+    </Compile>
     <Compile Include="zhijiaobanji.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="deletestu.resx">
       <DependentUpon>deletestu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteteac.resx">
+      <DependentUpon>deleteteac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LuruStu.resx">
       <DependentUpon>LuruStu.cs</DependentUpon>
@@ -261,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="teacherzhuce.resx">
       <DependentUpon>teacherzhuce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiugairenke.resx">
+      <DependentUpon>xiugairenke.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="zhijiaobanji.resx">
       <DependentUpon>zhijiaobanji.cs</DependentUpon>

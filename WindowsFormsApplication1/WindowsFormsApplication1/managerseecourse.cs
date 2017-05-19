@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1
     {
         private string sql = null;
         private SqlConnection conn = null;
-        private SqlCommand cmd = null;
+  //      private SqlCommand cmd = null;
         public string sqls;
         public string CID;
         public int iso = 0;
