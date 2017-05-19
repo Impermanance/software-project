@@ -52,11 +52,17 @@
     <Compile Include="Courses.Designer.cs">
       <DependentUpon>Courses.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="managerseestu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="managerseestu.Designer.cs">
+      <DependentUpon>managerseestu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shouye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shouye.Designer.cs">
+      <DependentUpon>shouye.cs</DependentUpon>
     </Compile>
     <Compile Include="Grades.cs">
       <SubType>Form</SubType>
@@ -147,8 +153,11 @@
     <EmbeddedResource Include="Courses.resx">
       <DependentUpon>Courses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="managerseestu.resx">
+      <DependentUpon>managerseestu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shouye.resx">
+      <DependentUpon>shouye.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Grades.resx">
       <DependentUpon>Grades.cs</DependentUpon>

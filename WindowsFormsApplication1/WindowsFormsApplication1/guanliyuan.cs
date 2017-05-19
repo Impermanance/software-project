@@ -15,5 +15,16 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void 修改学生信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            managerseestu ms = new managerseestu();
+            ms.Show();
+        }
+
+        private void 录入学生信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

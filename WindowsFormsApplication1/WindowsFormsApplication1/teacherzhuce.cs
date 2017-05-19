@@ -86,7 +86,7 @@ namespace WindowsFormsApplication1
                     MessageBox.Show("教师信息录入成功");
                     conn.Close();
                     this.Close();
-                    Form1 fm1 = new Form1();
+                    shouye fm1 = new shouye();
                     fm1.Show();
                 }
         }

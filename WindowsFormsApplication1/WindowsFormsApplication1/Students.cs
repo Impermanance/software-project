@@ -23,7 +23,7 @@ namespace WindowsFormsApplication1
 
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 fm1 = new Form1();
+            shouye fm1 = new shouye();
             fm1.Show();
             this.Close();
         }

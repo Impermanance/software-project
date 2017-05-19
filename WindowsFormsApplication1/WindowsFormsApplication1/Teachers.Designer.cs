@@ -32,7 +32,6 @@
             this.基本信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.个人信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.任课信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.执教班级查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.录入学生成绩ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.学生基本信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.学生成绩查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,8 +56,7 @@
             // 
             this.基本信息ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.个人信息查询ToolStripMenuItem,
-            this.任课信息查询ToolStripMenuItem,
-            this.执教班级查询ToolStripMenuItem});
+            this.任课信息查询ToolStripMenuItem});
             this.基本信息ToolStripMenuItem.Name = "基本信息ToolStripMenuItem";
             this.基本信息ToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.基本信息ToolStripMenuItem.Text = "基本信息";
@@ -77,13 +75,6 @@
             this.任课信息查询ToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
             this.任课信息查询ToolStripMenuItem.Text = "任课信息查询";
             this.任课信息查询ToolStripMenuItem.Click += new System.EventHandler(this.任课信息查询ToolStripMenuItem_Click);
-            // 
-            // 执教班级查询ToolStripMenuItem
-            // 
-            this.执教班级查询ToolStripMenuItem.Name = "执教班级查询ToolStripMenuItem";
-            this.执教班级查询ToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
-            this.执教班级查询ToolStripMenuItem.Text = "执教班级查询";
-            this.执教班级查询ToolStripMenuItem.Click += new System.EventHandler(this.执教班级查询ToolStripMenuItem_Click);
             // 
             // 录入学生成绩ToolStripMenuItem
             // 
@@ -154,7 +145,6 @@
         private System.Windows.Forms.ToolStripMenuItem 录入成绩ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 任课信息查询ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 执教班级查询ToolStripMenuItem;
 
     }
 }

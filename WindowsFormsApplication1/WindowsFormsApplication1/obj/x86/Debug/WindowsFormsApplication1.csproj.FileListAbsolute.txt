@@ -21,7 +21,6 @@ C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApp
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.courses.resources
-C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Grades.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.guanliyuan.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
@@ -38,3 +37,5 @@ C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApp
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Luruchengji.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.renke.resources
 C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.zhijiaobanji.resources
+C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.managerseestu.resources
+C:\Users\Administrator\software-project\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.shouye.resources

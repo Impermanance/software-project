@@ -29,7 +29,8 @@ namespace WindowsFormsApplication1
             conn = new SqlConnection(sql);
             conn.Open();
 
-            string sqls = string.Format("select ID,CID,CName,Grades from Scores where TeacherName =(select Name from Teacher where ID='{0}')", id);
+            string sqls = string.Format("select Students.ID,Students.Name,Scores.CID,Scores.CName,Scores.Grades  from Scores,Students"
+            +"  where Scores.ID=Students.ID and Scores.TeacherName =(select Teacher.Name from Teacher where ID='{0}')", id);
             SqlDataAdapter da = new SqlDataAdapter(sqls, conn);
             DataSet ds = new DataSet();
             da.Fill(ds);
@@ -70,7 +71,7 @@ namespace WindowsFormsApplication1
             {
                 for (int i = 0; i < dataGridView1.Rows.Count; i++)
                 {
-                    scores = dataGridView1.Rows[i].Cells[3].Value.ToString();
+                    scores = dataGridView1.Rows[i].Cells[4].Value.ToString();
                     string sqls = string.Format("update Scores set Grades = '{0}' where  ID='{1}' and TeacherName=(select Name from Teacher where ID='{2}')", scores.ToString(), dataGridView1.Rows[i].Cells[0].Value.ToString(),id.ToString());
                     SqlCommand cmdl = new SqlCommand(sqls, conn);
                     cmdl.ExecuteNonQuery();

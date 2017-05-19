@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : Form
+    public partial class shouye : Form
     {
         private SqlCommand cmd = null;
         private string sql = null;
@@ -18,7 +18,7 @@ namespace WindowsFormsApplication1
         public static String id;
         public static String password;
         public int isok=0;
-        public Form1()
+        public shouye()
         {
             InitializeComponent();
            // this.BackgroundImage = Image.FromFile("Resources\dl.jpg");
