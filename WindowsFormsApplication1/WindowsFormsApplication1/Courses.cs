@@ -13,7 +13,8 @@ namespace WindowsFormsApplication1
     public partial class courses : Form
     {
       //  private SqlCommand cmd = null;
-        private string sql = null;
+      //  private string sql = null;
+        private static string sql = System.Configuration.ConfigurationSettings.AppSettings["connectionstring"];
         private SqlConnection conn = null;
         public string sqls;
         public int iso=0;
@@ -31,7 +32,7 @@ namespace WindowsFormsApplication1
 
         private void serach_Click(object sender, EventArgs e)
         {
-            sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+          //  sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
             conn = new SqlConnection(sql);
             conn.Open();
             if (comboBox1.Text == "课程名")
@@ -63,7 +64,7 @@ namespace WindowsFormsApplication1
 
         private void display_Click(object sender, EventArgs e)
         {
-            sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+        //    sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
             conn = new SqlConnection(sql);
             conn.Open();
             sqls = string.Format("select CID,Cname,Time,Didian,Teacher from Course ");
@@ -96,7 +97,7 @@ namespace WindowsFormsApplication1
         {
             button2.Visible = true;
             button3.Visible = true;
-            sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+        //    sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
             conn = new SqlConnection(sql);
             conn.Open();
             sqls = string.Format("select CID,Cname,Time,Didian,Teacher from Course where CID not in (select ID from selectcourses "
@@ -121,7 +122,7 @@ namespace WindowsFormsApplication1
             if (iso == 1)
                 MessageBox.Show("未选择任何课程，请重试");
 
-            sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+         //   sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
             conn = new SqlConnection(sql);
             conn.Open();
             int isok = 0;

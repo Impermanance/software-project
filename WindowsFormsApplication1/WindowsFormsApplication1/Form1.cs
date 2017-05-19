@@ -7,17 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
         private SqlCommand cmd = null;
-        private string sql = null;
+      //  private string sql = null;
         private SqlConnection conn = null;
         public static String id;
         public static String password;
         public int isok=0;
+        private static string sql = System.Configuration.ConfigurationSettings.AppSettings["connectionstring"];
         public Form1()
         {
             InitializeComponent();
@@ -54,7 +56,7 @@ namespace WindowsFormsApplication1
 
                 try
                 {
-                    sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+                   
                     conn = new SqlConnection(sql);
                     conn.Open();
                     //SqlDataAdapter da = new SqlDataAdapter(sql,conn);
