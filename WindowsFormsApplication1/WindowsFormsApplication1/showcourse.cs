@@ -102,16 +102,13 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
-            {
-                dataGridView1.Rows[i].Cells[0].Value = true;
 
-            }
+        private void tuichu_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
@@ -120,9 +117,13 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void tuichu_Click_1(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                dataGridView1.Rows[i].Cells[0].Value = true;
+
+            }
         }
 
 

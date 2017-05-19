@@ -85,10 +85,10 @@ namespace WindowsFormsApplication1
             isok = 1;
             tb_address.ReadOnly = false;
             tb_bir.ReadOnly = false;
-            tb_class.ReadOnly = false; ;
+           // tb_class.ReadOnly = false; ;
            // tb_id.ReadOnly = false;
-            tb_name.ReadOnly = false;
-            tb_room.ReadOnly = false;
+           // tb_name.ReadOnly = false;
+           // tb_room.ReadOnly = false;
             pwdd.ReadOnly = false;
             qqq.ReadOnly = false;
             telp.ReadOnly = false;
@@ -130,18 +130,7 @@ namespace WindowsFormsApplication1
                     pwdd.Text = reader.GetValue(11).ToString();
                 }
             }
-            //tb_id.Text = reader.GetValue(0).ToString();
-            //tb_name.Text = reader.GetValue(1).ToString();
-            //tb_sex.Text = reader.GetValue(2).ToString();
-            //tb_class.Text = reader.GetValue(3).ToString();
-            //tb_bir.Text = reader.GetValue(4).ToString();
-            //tb_address.Text = reader.GetValue(5).ToString();
-            //tb_room.Text = reader.GetValue(6).ToString();
-            //cb_face.Text = reader.GetValue(7).ToString();
-            //qqq.Text = reader.GetValue(8).ToString();
-            //telp.Text = reader.GetValue(9).ToString();
-            //pictureBox1.ImageLocation = reader.GetValue(10).ToString();
-            //pwdd.Text = reader.GetValue(11).ToString();
+           
             reader.Close();
 
         }

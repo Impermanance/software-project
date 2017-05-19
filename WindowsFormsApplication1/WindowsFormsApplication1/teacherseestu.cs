@@ -34,41 +34,7 @@ namespace WindowsFormsApplication1
             pictureBox1.ImageLocation = path;
         }
 
-        private void studentsinformation_Load(object sender, EventArgs e)
-        {
-            //sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
-            //conn = new SqlConnection(sql);
-            //conn.Open();
-            //sql = string.Format("select * from Students where ID = '{0}'", Convert.ToInt32(id));
-            //cmd = new SqlCommand(sql, conn);
-            //SqlDataReader reader = cmd.ExecuteReader();
-            //if (reader.HasRows)
-            //{
-            //    while (reader.Read())
-            //    {
-            //        tb_id.Text = reader.GetValue(0).ToString();
-            //        tb_name.Text = reader.GetValue(1).ToString();
-            //        tb_sex.Text = reader.GetValue(2).ToString();
-            //        tb_class.Text = reader.GetValue(3).ToString();
-            //        tb_bir.Text = reader.GetValue(4).ToString();
-            //        tb_address.Text = reader.GetValue(5).ToString();
-            //        tb_room.Text = reader.GetValue(6).ToString();
-            //        cb_face.Text = reader.GetValue(7).ToString();
-            //        qqq.Text = reader.GetValue(8).ToString();
-            //        telp.Text = reader.GetValue(9).ToString();
-            //        pictureBox1.ImageLocation = reader.GetValue(10).ToString();
-            //        pwdd.Text = reader.GetValue(11).ToString();
-            //    }
-            //}
-          
-            //reader.Close();
 
-        }
-
-        private void bt_queren_Click_1(object sender, EventArgs e)
-        {
-            
-        }
 
         private void bt_resume_Click_1(object sender, EventArgs e)
         {
@@ -76,8 +42,8 @@ namespace WindowsFormsApplication1
             tb_address.ReadOnly = false;
             tb_bir.ReadOnly = false;
             tb_class.ReadOnly = false; ;
-            tb_id.ReadOnly = false;
-            tb_name.ReadOnly = false;
+          //  tb_id.ReadOnly = false;
+           // tb_name.ReadOnly = false;
             tb_room.ReadOnly = false;
             pwdd.ReadOnly = false;
             qqq.ReadOnly = false;

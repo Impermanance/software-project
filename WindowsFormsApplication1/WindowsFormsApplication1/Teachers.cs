@@ -38,6 +38,12 @@ namespace WindowsFormsApplication1
             ts.Show();
         }
 
+        private void 学生成绩查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            stuscore sc = new stuscore();
+            sc.Show();
+        }
+
 
       
     }
