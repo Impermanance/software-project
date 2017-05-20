@@ -16,6 +16,7 @@ namespace WindowsFormsApplication1
         private string sql = null;
         private SqlConnection conn = null;
         public string id;
+        public int avescores=0;
         public Grades(string ID)
         {
             InitializeComponent();
@@ -33,6 +34,14 @@ namespace WindowsFormsApplication1
             DataSet ds = new DataSet();
             da.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
+
+            textBox2.Text = dataGridView1.Rows.Count.ToString();
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                avescores += Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value);
+            }
+            avescores = avescores / Convert.ToInt32(dataGridView1.Rows.Count.ToString());
+            textBox1.Text = avescores.ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)
