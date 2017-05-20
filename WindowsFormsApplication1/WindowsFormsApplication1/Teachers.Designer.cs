@@ -37,6 +37,7 @@
             this.学生成绩查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.录入成绩ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除成绩ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +83,8 @@
             this.录入学生成绩ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.学生基本信息查询ToolStripMenuItem,
             this.学生成绩查询ToolStripMenuItem,
-            this.录入成绩ToolStripMenuItem});
+            this.录入成绩ToolStripMenuItem,
+            this.删除成绩ToolStripMenuItem});
             this.录入学生成绩ToolStripMenuItem.Name = "录入学生成绩ToolStripMenuItem";
             this.录入学生成绩ToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.录入学生成绩ToolStripMenuItem.Text = "学生成绩管理";
@@ -119,6 +121,14 @@
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
+            // 删除成绩ToolStripMenuItem
+            // 
+            this.删除成绩ToolStripMenuItem.Name = "删除成绩ToolStripMenuItem";
+            this.删除成绩ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.删除成绩ToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.删除成绩ToolStripMenuItem.Text = "删除成绩";
+            this.删除成绩ToolStripMenuItem.Click += new System.EventHandler(this.删除成绩ToolStripMenuItem_Click);
+            // 
             // Teachers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -146,6 +156,7 @@
         private System.Windows.Forms.ToolStripMenuItem 录入成绩ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 任课信息查询ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 删除成绩ToolStripMenuItem;
 
     }
 }

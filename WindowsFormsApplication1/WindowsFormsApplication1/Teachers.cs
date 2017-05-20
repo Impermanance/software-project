@@ -61,6 +61,12 @@ namespace WindowsFormsApplication1
             zhijiaobanji zb = new zhijiaobanji(id);
             zb.Show();
         }
+
+        private void 删除成绩ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            deletescore ds = new deletescore(id);
+            ds.Show();
+        }
       
     }
 }

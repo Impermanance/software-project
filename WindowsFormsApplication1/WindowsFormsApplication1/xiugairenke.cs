@@ -14,7 +14,8 @@ namespace WindowsFormsApplication1
     {
         private string sql = null;
         private SqlConnection conn = null;
-  //      private SqlCommand cmd = null;
+        private SqlCommand cmd = null;
+        public int ist = 0;
         public xiugairenke()
         {
             InitializeComponent();
@@ -56,18 +57,33 @@ namespace WindowsFormsApplication1
                         {
                             if ((bool)dataGridView2.Rows[j].Cells[0].EditedFormattedValue == true)
                             {
+                                sql = string.Format("select * from zhijiao where TID = (select id from teacher where name='{0}')", dataGridView2.Rows[j].Cells[1].Value.ToString());
+                                cmd = new SqlCommand(sql, conn);
+                                SqlDataReader reader = cmd.ExecuteReader();
+                                if(reader.HasRows)
+                                {
+                                    reader.Close();
+                                    MessageBox.Show("已添加过该课程给此老师");
+                                }
+                                else
+                                {
+                                    reader.Close();
                                 string sqls = string.Format("insert into zhijiao values((select ID from Teacher where Name='{0}'),(select CID from Course where Cname='{1}'))"
                                     ,dataGridView2.Rows[j].Cells[1].Value.ToString()
                                     ,dataGridView1.Rows[i].Cells[1].Value.ToString()
                                     );
                                 SqlCommand cmdl = new SqlCommand(sqls, conn);
                                 cmdl.ExecuteNonQuery();
+                                ist = 1;
+                                }
                             }
                     
                         }
                     }
 
                 }
+                
+                if(ist==1)
                 MessageBox.Show("任课信息添加成功！");
                 string sqlss = string.Format("select Cname from Course");
                 SqlDataAdapter da = new SqlDataAdapter(sqlss, conn);

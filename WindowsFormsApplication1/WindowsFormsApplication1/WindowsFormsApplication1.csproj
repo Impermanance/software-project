@@ -58,6 +58,12 @@
     <Compile Include="Courses.Designer.cs">
       <DependentUpon>Courses.cs</DependentUpon>
     </Compile>
+    <Compile Include="deletescore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletescore.Designer.cs">
+      <DependentUpon>deletescore.cs</DependentUpon>
+    </Compile>
     <Compile Include="deletestu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Courses.resx">
       <DependentUpon>Courses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletescore.resx">
+      <DependentUpon>deletescore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="deletestu.resx">
       <DependentUpon>deletestu.cs</DependentUpon>
