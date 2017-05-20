@@ -164,6 +164,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources._3;
             this.ClientSize = new System.Drawing.Size(686, 452);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button3);
@@ -173,7 +174,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "deletescore";
-            this.Text = "deletescore";
+            this.Text = "删除成绩";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

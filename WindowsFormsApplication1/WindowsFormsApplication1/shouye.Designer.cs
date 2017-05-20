@@ -83,6 +83,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(258, 188);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(202, 25);
             this.textBox2.TabIndex = 4;
             // 
@@ -144,7 +145,7 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // shouye
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -160,7 +161,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "shouye";
             this.Text = "登录系统";
             this.ResumeLayout(false);
             this.PerformLayout();
