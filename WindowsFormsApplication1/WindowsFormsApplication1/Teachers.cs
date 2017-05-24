@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApplication1
 {
@@ -13,6 +14,9 @@ namespace WindowsFormsApplication1
     {
         public string path;
         public string id;
+        private SqlCommand cmd = null;
+        private string sql = null;
+        private SqlConnection conn = null;
         public Teachers(string ID)
         {
             InitializeComponent();
@@ -66,6 +70,25 @@ namespace WindowsFormsApplication1
         {
             deletescore ds = new deletescore(id);
             ds.Show();
+        }
+
+        private void Teachers_Load(object sender, EventArgs e)
+        {
+            sql = @"server=.\sqlexpress;database= student;Integrated Security=SSPI";
+            conn = new SqlConnection(sql);
+            conn.Open();
+            sql = string.Format("select * from Teacher where ID = '{0}'", Convert.ToInt32(id));
+            cmd = new SqlCommand(sql, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    textBox1.Text = reader.GetValue(1).ToString();
+                }
+            }
+            reader.Close();
+            label4.Text = DateTime.Now.ToString("yyyy-MM-dd:HH:mm:ss");  
         }
       
     }
