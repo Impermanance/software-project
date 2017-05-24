@@ -181,7 +181,7 @@
             this.Controls.Add(this.serach);
             this.Controls.Add(this.coursename);
             this.Name = "managerseecourse";
-            this.Text = "managerseecourse";
+            this.Text = "课程信息展示";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
