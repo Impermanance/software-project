@@ -77,5 +77,12 @@ namespace WindowsFormsApplication1
             xiugairenke xr = new xiugairenke();
             xr.Show();
         }
+       
+
+        private void guanliyuan_Load(object sender, EventArgs e)
+        {
+            label4.Text = DateTime.Now.ToString("yyyy-MM-dd:HH:mm:ss");  
+        } 
+
     }
 }
